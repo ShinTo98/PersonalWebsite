@@ -13,7 +13,18 @@ h1 {
   margin-bottom: 0;
 }
 
-h2, h3, h4 {
+h2 {
+  font-family: didot;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h3, h4 {
   font-family: didot;
   font-weight: 400;
   font-style: normal;
@@ -44,7 +55,7 @@ p {
   text-transform: none;
   color: #ffffff;
   opacity: 0.9;
-  line-height: 1.4em;
+  line-height: 1.6em;
   margin-bottom: 0;
 }
 
@@ -91,38 +102,30 @@ p {
 	transition: all 0.2s;
 	margin-top: 4px
 }
-
 .bottom-bar {
 	margin-bottom: 4px
 }
- 
 .navbar-toggler {
   border: none;
   background: transparent !important;
 }
-
 .navbar-toggler .top-bar {
   transform: translateX(3px) rotate(45deg);
   transform-origin: 10% 10%;
 }
- 
 .navbar-toggler .middle-bar {
   opacity: 0;
 }
- 
 .navbar-toggler .bottom-bar {
   transform: translateX(3px) rotate(-45deg);
   transform-origin: 10% 90%;
 }
-
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
 }
- 
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
 }
- 
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
@@ -140,6 +143,24 @@ p {
 
 .text-highlight, .text-highlight:hover {
   color: #ffac33;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-top: 4rem;
+}
+
+.image-container {
+  display: block;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.toolkit-image{
+  width: 100%;
+  margin-top: 3rem;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -166,6 +187,10 @@ p {
 
   .col-lg-5 {
     padding-top: 2rem;
+  }
+
+  .row {
+    padding-top: 5rem;
   }
 }
 
@@ -195,11 +220,6 @@ p {
     padding-left: 5px;
     border-left: 1px solid black;
 }
-.image-container {
-  display: block;
-  text-align: center;
-  margin-top: -22px;
-}
 
 .front-page-image {
   width: 80%;
@@ -227,20 +247,8 @@ p {
   margin-right: -300px;
 }
 
-.toolkit-image{
-  width: 70%;
-  margin-top: 50px;
-}
-
 .work{
   padding-right: 0px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  padding-top: 120px;
 }
 
 /* Create two equal columns that sits next to each other */
