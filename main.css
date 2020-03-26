@@ -237,6 +237,10 @@ p {
   h1 {
     font-size: 2.8rem;
   }
+
+  .container {
+    width: 100%;
+  }
 }
 
 .ml7 {
