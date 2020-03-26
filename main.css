@@ -133,6 +133,11 @@ p {
   max-width: 100%;
 }
 
+.paragraph {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 
 
 
@@ -163,11 +168,6 @@ p {
   display: block;
   text-align: center;
   margin-top: -22px;
-}
-
-.paragraph {
-  padding-left: 85px;
-  padding-right: 85px;
 }
 
 .front-page-image {
@@ -240,6 +240,11 @@ p {
 
   .container {
     width: 100%;
+  }
+
+  .paragraph {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
