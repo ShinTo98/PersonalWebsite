@@ -18,7 +18,7 @@
 
   <body>
     <nav class="navbar-expand-lg navbar-custom">
-      <h1>Shantao Yi</h1>
+      <h2>Shantao Yi</h2>
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
@@ -30,6 +30,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="files/Resume - Shantao Yi.pdf">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Intro">Intro</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,24 +59,22 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <!-- Empty div for spacing-->
+    <div id="Intro" style="height: 10rem;"></div>
+    <br>
+
+    <div class="container">
+        <div class="image-container"><img class="intro-image" src="images/logo.png" style="width: 80px;"></div>
         <br>
 
-        <div class="image-container">
-          <img class="intro-image" src="images/logo.png" style="width: 60px;">
-        </div>
-
-        <br>
+        <!-- Empty div for spacing-->
+        <div style="height: 1rem;"></div>
         <br>
 
-        <div id="Experience" class='paragraph'>
-        <h1>Hi, I am Shantao!</h1>
+        <div class='paragraph'>
+        <h1>Hi, this is Shantao.</h1>
+        <!-- Empty div for spacing-->
+        <div style="height: 2rem;"></div>
         <p>My name is Yiwen (Yvonne) Hou, a human-centered design professional. I am passionate about creating empathetic and 
         seamless user experience, and I am currently pursuing a Bachelor of Science degree focusing on HCI/Design Interaction at <a href = "https://ucsd.edu/" class="text-danger"><strong>UC San Diego</strong></a>. </p>
         <p>Currently, I am a 3D user interaction & UX intern at <a href = "https://nanome.ai/" class="text-danger"><strong>Nanome Inc</strong></a>. I also worked as an undergraduate researcher in <a href="https://designlab.ucsd.edu/about/people-in-the-lab/" class="text-danger">
@@ -229,30 +230,30 @@
 
 
 
-     <script type="text/javascript">
-        $('.ml7 .letters').each(function(){
-        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-        });
+    <script type="text/javascript">
+      $('.ml7 .letters').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+      });
 
-        anime.timeline({loop: true})
-        .add({
-          targets: '.ml7 .letter',
-          translateY: ["1.1em", 0],
-          translateX: ["0.55em", 0],
-          translateZ: 0,
-          rotateZ: [180, 0],
-          duration: 750,
-          easing: "easeOutExpo",
-          delay: function(el, i) {
-            return 50 * i;
-          }
-        }).add({
-          targets: '.ml7',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-     </script>
+      anime.timeline({loop: true})
+      .add({
+        targets: '.ml7 .letter',
+        translateY: ["1.1em", 0],
+        translateX: ["0.55em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 750,
+        easing: "easeOutExpo",
+        delay: function(el, i) {
+          return 50 * i;
+        }
+      }).add({
+        targets: '.ml7',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+    </script>
  </body>
- </html>
+</html>

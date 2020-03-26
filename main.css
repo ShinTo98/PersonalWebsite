@@ -2,7 +2,18 @@ body {
   background-color: #111111;
 }
 
-h1, h2, h3, h4 {
+h1 {
+  font-family: didot;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  color: #ffffff;
+  font-size: 3.8rem;
+  margin-bottom: 0;
+}
+
+h2, h3, h4 {
   font-family: didot;
   font-weight: 400;
   font-style: normal;
@@ -47,7 +58,7 @@ p {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.8rem 3rem;
   background: #111111;
   width: 100%;
   z-index: 1000;
@@ -117,7 +128,10 @@ p {
 }
 /* --------- END CSS for the animated navbar toggler --------- */
 
-
+.container{
+  width: 80%;
+  max-width: 100%;
+}
 
 
 
@@ -177,18 +191,6 @@ p {
   height: auto;
 }
 
-.container{
-  width: 90%;
-  max-width: 100%;
-    padding-right: 54px;
-    padding-left: 54px;
-    padding-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color:#111111;
-  position: relative;
-}
-
 .experience{
   margin-left: -42px;
   margin-right: -300px;
@@ -230,6 +232,10 @@ p {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
   }
 }
 
