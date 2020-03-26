@@ -138,6 +138,31 @@ p {
   padding-right: 85px;
 }
 
+.text-highlight, .text-highlight:hover {
+  color: #ffac33;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .paragraph {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 
 
 
@@ -225,27 +250,6 @@ p {
   max-height: 100%;
   margin-top: 8px;
   vertical-align: middle;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .paragraph {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
 }
 
 .ml7 {
