@@ -73,6 +73,11 @@ p {
   font-size: 1.2rem;
 }
 
+.p-oblique {
+  font-style: oblique; 
+  font-size: 1.6rem;
+}
+
 .navbar-custom {
   position: fixed;
   display: -ms-flexbox;
@@ -295,6 +300,10 @@ p {
 
   .p-small {
     font-size: 1rem;
+  }
+
+  .p-oblique {
+    font-size: 1.2rem;
   }
   
   .navbar-logo {
